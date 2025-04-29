@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web-115 Final Project</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1><strong>Task Manager</strong></h1>
+    <label id = "labels" for = "submit">Important</label>
+    <input type = "text" id = "textinput">
+    <select type = "submit"></select>
+    <slot></slot>
+    <button type = "submit" id = "submitButton"><p>Add Task</p></button>
+    <p id = "results"></p>
+    <script src="index.js"></script>
 </body>
 </html>
