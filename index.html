@@ -7,13 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1><strong>Task Manager</strong></h1>
-    <label id = "labels" for = "submit">Important</label>
-    <input type = "text" id = "textinput">
-    <select type = "submit"></select>
-    <slot></slot>
-    <button type = "submit" id = "submitButton"><p>Add Task</p></button>
-    <p id = "results"></p>
-    <script src="index.js"></script>
+    <div>
+        <form id = "forms">
+            <h1><strong>Task Manager</strong></h1>
+            <label id = "labels" for = "submit">Important</label>
+            <input type = "text" id = "textinput">
+            <select type = "submit" id = "dropdown">
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+            </select>
+            <input type = "checkbox" id = "checkbox">
+            <button type = "submit" id = "submitButton"><p>Add Task</p></button>
+            <p id = "results"></p>
+        </form>
+    </div>
+    <script src="index.js" defer></script>
 </body>
 </html>
